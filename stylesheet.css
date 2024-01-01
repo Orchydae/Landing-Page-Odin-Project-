@@ -2,50 +2,139 @@
 
 
 body {
+    margin: 0px;
     font-family: 'Roboto', sans-serif;
 }
 
 .header {
-    background-color: red;
-    padding: 20px;
+    padding: 0 100px 0 100px;
+    background-color: #FEFDE8;
     text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 100px 0 100px;
 }
 
 .header-links {
     display: flex;
-    flex: 1;
     justify-content: flex-end;
     gap: 20px;
 }
 
-
-
 .intro {
-    background-color: green;
-    padding: 20px;
-    text-align: center;
+    background-color: #FEFDE8;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px 20px 100px;
+    align-items: center;
+}
+
+.intro-text button {
+    background-color: blueviolet;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    font-weight: 900;
+}
+
+.intro-image {
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: center;
+    flex:1;
+}
+
+.intro-image img {
+    aspect-ratio: 1/1;
+    max-width: 80%;
 }
 
 .content {
-    background-color: yellow;
+    /* background-color: yellow; */
     padding: 20px;
     text-align: center;
+}
+
+.content-text p {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card img {
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
 .quote {
-    background-color: blue;
+    background-color: lightgray;
     padding: 20px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.footer {
-    background-color: orange;
-    padding: 20px;
-    text-align: center;
+.quote-content{
+    padding: 40px;
+    width: 450px;
+    font-weight: 200;
+    color: darkslategrey;
 }
-```
-```
+
+.quote-content .text {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.quote-content .author {
+    font-weight: 900;
+    text-align: right;
+}
+
+.call-action {
+    background-color: blueviolet;
+    padding: 20px 100px 20px 100px;
+    align-items: center;
+    margin: 50px 100px 50px 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.call-action-text {
+    color: white;
+}
+
+.call-action-title {
+    font-size: 20px;
+    font-weight: 900;
+    flex-grow: 1;
+}
+
+.call-action button {
+    background-color: inherit;
+    border: 1px solid white;
+    color: inherit;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 40px;
+    font-weight: 900;
+    flex-shrink: 0;
+}
+
+
+
+#footer {
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
